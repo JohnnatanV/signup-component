@@ -1,6 +1,7 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
   font-family: "Poppins", sans-serif;
 }
 
@@ -10,7 +11,7 @@ html {
 
 body {
   height: 100%;
-  background: url("../images/bg-intro-desktop.png") var(--main-color);
+  background: url("../images/bg-intro-mobile.png") var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +19,7 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
