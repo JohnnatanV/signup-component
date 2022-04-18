@@ -1,0 +1,27 @@
+.box-padding {
+  padding: 15px 25px;
+  width: 100%;
+}
+
+.form-content-style {
+  font-size: 0.8em;
+  font-weight: 600;
+  border: 1px solid var(--alt-text);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form-content-style:focus {
+  outline: 1px solid var(--main-text);
+  background-color: #fff;
+}
+
+input:-internal-autofill-selected {
+  background-color: #fff !important;
+}
+
+input::selection,
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  background-color: #fff !important;
+}
