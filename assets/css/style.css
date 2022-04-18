@@ -1,0 +1,101 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+:root {
+  /* Colors */
+  --main-color: hsl(0, 100%, 74%);
+  --second-color: hsl(154, 59%, 51%);
+
+  /* Accent */
+  --accent-color: hsl(248, 32%, 49%);
+
+  /* Neutral */
+  --main-text: hsl(249, 10%, 26%);
+  --alt-text: hsl(246, 25%, 77%);
+}
+
+.box-padding {
+  padding: 10px 25px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* 
+.header,
+.main {
+  margin: auto 100px;
+} */
+
+.header {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header div {
+  width: 60%;
+}
+
+.title,
+.title-legend {
+  color: #fff;
+}
+
+.title {
+  font-size: 2.3em;
+}
+
+.title-legend {
+  font-size: 0.8em;
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.box,
+.form {
+  width: 60%;
+}
+
+.info-box {
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 0.8em;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+}
+
+.form {
+  background: #fff;
+  padding: 40px 5px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.alert {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info {
+  font-size: 0.4em;
+}
