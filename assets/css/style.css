@@ -70,7 +70,7 @@
   color: #fff;
   font-size: 0.82em;
   line-height: 2.5vmax;
-  padding: 20px 70px;
+  padding: 20px 40px;
   margin-bottom: 20px;
   box-shadow: 0 6px 1px rgba(0, 0, 0, 0.2);
 }
@@ -82,6 +82,26 @@
 
 .input-box {
   position: relative;
+}
+
+.input-box input {
+  transition: all 0.2s ease-in;
+}
+
+.input-box[data-error] input {
+  border: solid 2px var(--main-color);
+  color: var(--main-color);
+}
+
+.input-box[data-error]::after {
+  content: attr(data-error);
+  position: absolute;
+  display: block;
+  bottom: -5px;
+  right: 8%;
+  font-size: 0.65em;
+  font-weight: bold;
+  color: var(--main-color);
 }
 
 .btn {
