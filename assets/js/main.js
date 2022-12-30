@@ -5,3 +5,5 @@ inputError.forEach((dataError) => {
     dataError.parentElement.removeAttribute("data-error")
   );
 });
+
+let x = 0;
