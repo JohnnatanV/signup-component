@@ -87,13 +87,18 @@
 .input-box input {
   transition: all 0.2s ease-in;
 }
-
+/* 
 .input-box[data-error] input {
+  border: solid 2px var(--main-color);
+  color: var(--main-color);
+} */
+
+.post-error[data-error] .data-error {
   border: solid 2px var(--main-color);
   color: var(--main-color);
 }
 
-.input-box[data-error]::after {
+.post-error[data-error]::after {
   content: attr(data-error);
   position: absolute;
   display: block;
