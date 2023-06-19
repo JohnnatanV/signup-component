@@ -4,10 +4,16 @@ const inputText = document.querySelectorAll("input[type=text]");
 const inputEmail = document.querySelector("input[type=email]");
 const inputPassword = document.getElementById("password");
 
-validateForm.addEventListener("change", () => {});
-inputBox.forEach((box) => {
-  box.addEventListener("focusout", () => {
-    if (!box.value) {
+const validateEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
+
+validateForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  inputBox.forEach((box) => {
+    if (!box.value || !validateEmail(inputEmail.value)) {
       box.parentElement.classList.add("post-error");
       box.nextElementSibling.classList.remove("hidden");
     } else {
@@ -16,7 +22,6 @@ inputBox.forEach((box) => {
     }
   });
 });
-
 // let rxEmail = /[^@ \t\r\n]+@[^@ \t\r\n]+.[^@ \t\r\n]+/;
 // let rxPass = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$_%^&*-]).{8,}$/g;
 
