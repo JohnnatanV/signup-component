@@ -47,9 +47,9 @@
         <div class="box info-box">
           <b>Try it free 7 days</b> then $20/mo. thereafter
         </div>
-        <form action="#" class="form">
+        <form action="#" class="form" id="form" method="post">
           <div
-            class="input-box box-padding post-error"
+            class="input-box box-padding"
             data-error="First Name cannot be empty"
           >
             <input
@@ -67,7 +67,7 @@
             />
           </div>
           <div
-            class="input-box box-padding post-error"
+            class="input-box box-padding"
             data-error="Last Name cannot be empty"
           >
             <input
@@ -85,12 +85,13 @@
             />
           </div>
           <div
-            class="input-box box-padding post-error"
+            class="input-box box-padding"
             data-error="Looks like this is not an email"
           >
             <input
+              pattern="/[^@ \t\r\n]+@[^@ \t\r\n]+.[^@ \t\r\n]+/g"
               class="form-content-style box-padding data-error"
-              type="text"
+              type="email"
               name="email"
               placeholder="Email Address"
               required
@@ -103,13 +104,14 @@
             />
           </div>
           <div
-            class="input-box box-padding post-error"
+            class="input-box box-padding"
             data-error="Password cannot be empty"
           >
             <input
               class="form-content-style box-padding data-error"
               type="password"
               name="password"
+              id="password"
               placeholder="Password"
               required
             />
