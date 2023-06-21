@@ -110,6 +110,7 @@
 }
 
 .btn {
+  cursor: pointer;
   border: none;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;

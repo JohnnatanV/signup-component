@@ -53,13 +53,14 @@
             data-error="First Name cannot be empty"
           >
             <input
+              pattern="[A-Za-z]{3,}"
               class="form-content-style box-padding data-error"
               type="text"
               name="name"
               placeholder="First Name"
             />
             <img
-              name="first-name"
+              id="first-name"
               class="error hidden"
               src="./assets/images/icon-error.svg"
               alt="error"
@@ -70,13 +71,14 @@
             data-error="Last Name cannot be empty"
           >
             <input
+              pattern="[A-Za-z]{3,}"
               class="form-content-style box-padding data-error"
               type="text"
               name="last-name"
               placeholder="Last Name"
             />
             <img
-              name="last-name"
+              id="last-name"
               class="error hidden"
               src="./assets/images/icon-error.svg"
               alt="error"
@@ -87,13 +89,14 @@
             data-error="Looks like this is not an email"
           >
             <input
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               class="form-content-style box-padding data-error"
               type="email"
               name="email"
               placeholder="Email Address"
             />
             <img
-              name="email"
+              id="email"
               class="error hidden"
               src="./assets/images/icon-error.svg"
               alt="error"
@@ -104,14 +107,14 @@
             data-error="Password cannot be empty"
           >
             <input
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"
               class="form-content-style box-padding data-error"
               type="password"
               name="password"
-              id="password"
               placeholder="Password"
             />
             <img
-              name="password"
+              id="password"
               class="error hidden"
               src="./assets/images/icon-error.svg"
               alt="error"
