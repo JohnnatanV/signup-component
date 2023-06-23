@@ -1,10 +1,10 @@
-// const validateForm = document.getElementById("form");
+const validateForm = document.getElementById("form");
 // const inputBox = document.querySelectorAll(".input-box input");
 // const inputText = document.querySelectorAll("input[type=text]");
 // const inputEmail = document.querySelector("input[type=email]");
 // const inputPassword = document.getElementById("password");
 
-const inputs = [...form.querySelectorAll(".data-error")];
+const inputs = [...validateForm.querySelectorAll(".data-error")];
 console.log(inputs);
 
 const allValid = inputs.forEach((input) => {
